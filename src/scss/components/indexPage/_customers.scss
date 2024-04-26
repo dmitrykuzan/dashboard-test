@@ -140,6 +140,12 @@
       height: 2.5rem;
       background-color: var(--clr-default-250);
 
+      &--prev {
+        svg {
+          transform: rotate(-180deg);
+        }
+      }
+
       span {
         display: block;
         height: 1.5rem;

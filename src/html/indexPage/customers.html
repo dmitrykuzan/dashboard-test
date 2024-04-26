@@ -172,8 +172,12 @@
             Showing data 1 to 8 of 256K entries
           </p>
           <div class="customers__pagination stack align-center">
-            <button class="customers__pagination-button stack center">
-              <span> < </span>
+            <button
+              class="customers__pagination-button customers__pagination-button--prev stack center"
+            >
+              <svg class="menu__link-arrow">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
             </button>
             <ul class="customers__pagination-list stack align-center">
               <li class="customers__pagination-item active">
@@ -194,7 +198,9 @@
               </li>
             </ul>
             <button class="customers__pagination-button stack center">
-              <span> > </span>
+              <svg class="menu__link-arrow">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
             </button>
           </div>
         </div>
