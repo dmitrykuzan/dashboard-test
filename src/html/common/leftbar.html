@@ -1,0 +1,30 @@
+<div class="leftbar">
+  <div class="leftbar__wrapper stack column">
+    <div class="leftbar__logo">@include("../ui/logo.html")</div>
+    <div class="leftbar__navigation">@include("../ui/menu.html")</div>
+    <div class="leftbar__user">
+      <a class="stack align-center" href="#">
+        <div class="leftbar__user-avatar">
+          <picture>
+            <source
+              srcset="img/ui/avatar@1x.webp 1x, img/ui/avatar@2x.webp 2x"
+              type="image/webp"
+            />
+            <img
+              src="img/ui/avatar@1x.jpg"
+              srcset="img/ui/avatar@2x.jpg 2x"
+              width="42"
+              height="42"
+              alt="User Avatar"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="leftbar__user-text stack column">
+          <span class="leftbar__user-name">Evano</span>
+          <span class="leftbar__user-role">Project Manager</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

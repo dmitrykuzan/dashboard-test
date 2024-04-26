@@ -1,0 +1,40 @@
+.leftbar {
+  padding-top: 3.6rem;
+  padding-right: 2.8rem;
+  padding-bottom: 7rem;
+  padding-left: 2.8rem;
+  width: 100%;
+  min-height: 100%;
+  max-width: 31rem;
+  box-shadow: var(--clr-shadow-100);
+  background: var(--clr-default-100);
+
+  &__wrapper {
+    height: 100%;
+    gap: 6.5rem;
+  }
+
+  &__user {
+    margin-top: auto;
+
+    a {
+      gap: 1.2rem;
+    }
+
+    &-text {
+      line-height: 133%;
+    }
+
+    &-name {
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: var(--clr-default-900);
+    }
+
+    &-role {
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: var(--clr-default-400);
+    }
+  }
+}

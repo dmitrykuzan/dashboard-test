@@ -1,10 +1,15 @@
 .typography {
   &.h1 {
-    font-size: fluid-font(4.2rem, 2rem);
+    font-weight: 500;
+    font-size: fluid-font(2.4rem, 1.8rem);
+    line-height: 133%;
+    color: var(--clr-default-900);
   }
 
   &.h2 {
-    font-size: fluid-font(5.2rem, 2.4rem);
+    font-size: fluid-font(2.2rem, 1.6rem);
+    line-height: 133%;
+    color: var(--clr-default-900);
   }
 
   &.h3 {
