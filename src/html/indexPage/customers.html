@@ -1,11 +1,12 @@
 <section class="customers">
   <div class="container">
     <div class="customers__wrapper stack column">
-      <h1 class="customers__title typography h1">Hello Evano 👋🏼</h1>
+      @include("../ui/burger.html")
+      <h1 class="customers__title">Hello Evano 👋🏼</h1>
       <div class="customers__body">
-        <div class="customers__top stack align-center justify-space-between">
+        <div class="customers__top stack justify-space-between">
           <div class="customers__text stack column">
-            <h2 class="typography h2">All Customers</h2>
+            <h2 class="customers__body-title">All Customers</h2>
             <p class="customers__subtitle">Active Mem bers</p>
           </div>
 
@@ -167,7 +168,7 @@
           </table>
         </div>
 
-        <div class="customers__bottom stack align-center justify-space-between">
+        <div class="customers__bottom stack justify-space-between">
           <p class="customers__pagination-info">
             Showing data 1 to 8 of 256K entries
           </p>

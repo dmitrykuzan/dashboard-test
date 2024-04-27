@@ -1,25 +1,58 @@
 .customers {
   margin-bottom: 10rem;
-  padding-top: 4rem;
+  padding-top: 6rem;
 
   &__wrapper {
-    gap: 5rem;
+    gap: 8rem;
+
+    @media (max-width: em(1280)) {
+      gap: 3rem;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: fluid-font(3rem, 2rem);
   }
 
   &__body {
     border-radius: 3rem;
+    width: 100%;
+    max-width: 127rem;
     box-shadow: var(--clr-shadow-100);
     background-color: var(--clr-default-100);
+
+    @media (max-width: em(992)) {
+      width: initial;
+      max-width: initial;
+    }
   }
 
   &__top {
-    padding-top: 3rem;
+    align-items: center;
+    padding-top: 4rem;
     padding-right: 5rem;
     padding-left: 4rem;
+    gap: 2.4rem;
+
+    @media (max-width: em(992)) {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    @media (max-width: em(575)) {
+      padding-top: 2rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
   }
 
   &__text {
-    gap: 0.7rem;
+    gap: 1.5rem;
+  }
+
+  &__body-title {
+    font-size: fluid-font(3rem, 2rem);
   }
 
   &__subtitle {
@@ -30,6 +63,8 @@
   &__search {
     position: relative;
     border-radius: 1rem;
+    min-width: 30rem;
+    min-height: 5rem;
     background-color: var(--clr-default-260);
 
     input {
@@ -49,10 +84,16 @@
       height: 2.4rem;
       transform: translateY(-50%);
     }
+
+    @media (max-width: em(575)) {
+      width: 100%;
+      min-width: initial;
+    }
   }
 
   &__table {
-    padding-top: 4rem;
+    overflow: auto;
+    padding-top: 6.5rem;
 
     table {
       border-collapse: collapse;
@@ -80,19 +121,27 @@
       tbody {
         td {
           border-bottom: 0.1rem solid var(--clr-default-200);
-          padding-top: 2.5rem;
-          padding-bottom: 2.5rem;
+          padding-top: 2.8rem;
+          padding-bottom: 2.8rem;
           font-weight: 500;
-          font-size: 1.4rem;
+          font-size: 1.6rem;
 
           &:first-child {
-            padding-left: 2rem;
+            padding-left: 3.8rem;
           }
 
           &:last-child {
-            padding-right: 2rem;
+            padding-right: 4rem;
+          }
+
+          &:nth-child(3) {
+            padding-left: 4rem;
           }
         }
+      }
+
+      @media (max-width: em(992)) {
+        min-width: 100rem;
       }
     }
   }
@@ -100,8 +149,8 @@
   &__status {
     border-radius: 0.4rem;
     width: 100%;
-    min-height: 3rem;
-    max-width: 8.5rem;
+    min-height: 3.5rem;
+    max-width: 10rem;
     font-weight: 500;
     font-size: 1.4rem;
 
@@ -119,25 +168,43 @@
   }
 
   &__bottom {
+    align-items: center;
     padding-top: 3rem;
     padding-right: 4rem;
     padding-bottom: 4rem;
     padding-left: 4rem;
+    gap: 2.5rem;
+
+    @media (max-width: em(992)) {
+      flex-direction: column-reverse;
+      align-items: start;
+    }
+
+    @media (max-width: em(767)) {
+      padding-top: 3rem;
+      padding-right: 1.5rem;
+      padding-bottom: 3rem;
+      padding-left: 1.5rem;
+    }
   }
 
   &__pagination {
     gap: 1.2rem;
 
     &-info {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
       color: var(--clr-default-300);
+
+      @media (max-width: em(992)) {
+        font-size: 1.6rem;
+      }
     }
 
     &-button {
       border: 0.1rem solid var(--clr-default-200);
       border-radius: 0.4rem;
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 3.5rem;
+      height: 3.5rem;
       background-color: var(--clr-default-250);
 
       &--prev {
@@ -150,21 +217,35 @@
         display: block;
         height: 1.5rem;
       }
+
+      @media (max-width: em(575)) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
     }
 
     &-list {
-      gap: 1.2rem;
+      gap: 1.8rem;
+
+      @media (max-width: em(575)) {
+        gap: 1rem;
+      }
     }
 
     &-item {
       a {
         border: 0.1rem solid var(--clr-default-200);
         border-radius: 0.4rem;
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
         font-size: 1.2rem;
         color: var(--clr-default-450);
         background-color: var(--clr-default-250);
+
+        @media (max-width: em(575)) {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
       }
 
       &.active {
@@ -174,5 +255,14 @@
         }
       }
     }
+
+    @media (max-width: em(992)) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: em(1280)) {
+    padding-top: 3rem;
   }
 }

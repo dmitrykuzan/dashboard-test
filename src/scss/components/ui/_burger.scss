@@ -1,4 +1,4 @@
-$burgerMQ: em(992);
+$burgerMQ: em(1280);
 
 .burger {
   $width: 2.5rem;
@@ -12,6 +12,7 @@ $burgerMQ: em(992);
     position: relative;
     z-index: 15;
     display: block;
+    margin-left: auto;
     width: $width;
     height: $height;
     background-color: transparent;

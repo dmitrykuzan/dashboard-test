@@ -5,7 +5,7 @@
   padding-left: 2.8rem;
   width: 100%;
   min-height: 100%;
-  max-width: 31rem;
+  max-width: 40rem;
   box-shadow: var(--clr-shadow-100);
   background: var(--clr-default-100);
 
@@ -36,5 +36,19 @@
       font-size: 1.2rem;
       color: var(--clr-default-400);
     }
+  }
+
+  @media (max-width: em(1480)) {
+    padding-top: 2.5rem;
+    padding-right: 2rem;
+    padding-bottom: 7rem;
+    padding-left: 2rem;
+    max-width: 30rem;
+  }
+
+  @media (max-width: em(1280)) {
+    padding: 0 !important;
+    width: 0;
+    height: 0;
   }
 }
